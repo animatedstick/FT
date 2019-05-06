@@ -20,11 +20,11 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-  if message.content.startswith(COMMAND_PREFIX + 'stats'):
+  if message.content.startswith(COMMAND_PREFIX + 'ft'):
     words = message.content.split(' ', 2)
 
     if len(words) < 3:
-      await message.channel.send( 'Usage: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
+      await message.channel.send('Usage: `c!stats <pc,xbl,psn> <nickname>`')
       return
 
     platform = words[1].lower()
@@ -36,7 +36,7 @@ async def on_message(message):
       platform = 'psn'
 
     if platform not in ('pc','xbl','psn'):
-      await message.channel.send( 'Usage: ' + COMMAND_PREFIX + 'stats <pc,xbl,psn> <nickname>')
+      await message.channel.send('Usage: `c!stats <pc,xbl,psn> <nickname>`')
       return
     else:
       res = fortnite_tracker_api(platform,words[2])
