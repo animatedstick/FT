@@ -10,12 +10,9 @@ FORTNITE_API_TOKEN = os.getenv("FT_TOKEN")
 COMMAND_PREFIX = 'c!' , 'C!' ,'charlie ','c' , '<@568492275504775178> ' , 'C'
 
 client = discord.Client()
-prefix = 'f!' 
-client = commands.Bot(command_prefix=prefix, description='A Discord Bot By the AnimatedStick#4797')
 
 @client.event
 async def on_ready():
-  #await client.change_presence(activity=discord.Game(name='Type #help'))
   print("Done")
 
 @client.event
