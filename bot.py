@@ -8,11 +8,11 @@ from discord.ext import commands
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 FORTNITE_API_TOKEN = os.getenv("FT_TOKEN")
 COMMAND_PREFIX = 'c!' 
-COMMAND_PREFIX = 'C!'
-COMMAND_PREFIX = 'charlie '
-COMMAND_PREFIX =  'c'
-COMMAND_PREFIX =  '<@568492275504775178> '
-COMMAND_PREFIX =  'C'
+#COMMAND_PREFIX = 'C!'
+#COMMAND_PREFIX = 'charlie '
+#COMMAND_PREFIX =  'c'
+#COMMAND_PREFIX =  '<@568492275504775178> '
+#COMMAND_PREFIX =  'C'
 
 
 client = discord.Client()
